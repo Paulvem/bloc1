@@ -1,0 +1,116 @@
+/* Style de base pour la page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 120vh; /* Augmente la hauteur de la page */
+    background-color: #f0f0f0;
+}
+
+/* Conteneur principal */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+    position: relative; /* Nécessaire pour positionner l'en-tête en absolu */
+}
+
+/* En-tête */
+.header {
+    position: absolute; /* Positionne l'en-tête de manière absolue */
+    top: 0%; /* Positionne partiellement l'en-tête sur l'image */
+    left: 50%;
+    transform: translateX(-50%); /* Centre horizontalement */
+    background-color: #ff7043; /* Couleur d'arrière-plan orange */
+    color: white;
+    padding: 15px 20px;
+    width: 40%; /* Réduit la largeur de l'en-tête */
+    max-width: 800px;
+    z-index: 2; /* S'assure que l'en-tête est au-dessus de l'image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.header h1 {
+    margin: 10px 0 0;
+    font-size: 1.5rem;
+}
+
+/* Section des services avec image en arrière-plan */
+.services-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    padding: 50px 0;
+    background-image: url("images/df-min.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+/* Style des cartes de service */
+.service-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    width: 22%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+    color: #ff7043;
+    margin: 10px 0;
+}
+
+.service-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+/* Pied de page */
+.footer {
+    width: 100%;
+    background-color: #000; /* Fond noir */
+    color: #fff; /* Texte blanc */
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ff7043; /* Couleur orange au survol */
+}
